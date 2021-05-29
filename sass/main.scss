@@ -1,3 +1,7 @@
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
 *,
 *::after,
 *::before {
@@ -5,7 +9,6 @@
   padding: 0%;
   box-sizing: inherit;
 }
-
 html {
   font-size: 10px;
 }
@@ -24,8 +27,8 @@ body {
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba(126, 213, 111, 0.8),
-      rgba(40, 180, 133, 0.8)
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
     ),
     url(../img/hero.jpg);
   background-size: cover;
@@ -33,7 +36,6 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 }
-
 .header__logo-box {
   position: absolute;
   top: 4rem;
@@ -43,7 +45,6 @@ body {
 .header__logo {
   height: 3.5rem;
 }
-
 .header__text-box {
   position: absolute;
   top: 40%;
@@ -51,14 +52,12 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
 }
-
 .heading-primary--main {
   display: block;
   font-size: 6rem;
@@ -69,7 +68,6 @@ body {
   animation-timing-function: ease-out;
   /* animation-duration: 5s; */
 }
-
 .heading-primary--sub {
   display: block;
   font-size: 2rem;
@@ -135,12 +133,12 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem black;
+  box-shadow: 0 1rem 2rem rgb(0, 0, 0.2);
 }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 5px 1rem black;
+  box-shadow: 0 5px 1rem rgb(0, 0, 0.2);
 }
 
 .btn--white {

@@ -1,0 +1,22 @@
+{
+  "name": "outdoors",
+  "version": "1.0.0",
+  "description": "Loading page for Outdoors",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faizansayyed/outdoors-tours.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faizansayyed/outdoors-tours/issues"
+  },
+  "homepage": "https://github.com/faizansayyed/outdoors-tours#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
